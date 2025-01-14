@@ -1,9 +1,13 @@
 <template>
   <lightning-card>
     <div class="slds-var-m-around_medium">
-      <h1>This is Parent Component</h1>
+      <strong
+        ><h1 class="slds-var-m-around_medium">
+          This is Parent component.
+        </h1></strong
+      >
       <lightning-button type="text" label="Show Modal" onclick={clickHandler}
-        >Show Mo</lightning-button
+        >Show Modal</lightning-button
       >
       <template if:true={showModal}>
         <c-child-modal-component
