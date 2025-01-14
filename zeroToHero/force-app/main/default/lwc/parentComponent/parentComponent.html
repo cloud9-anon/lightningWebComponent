@@ -1,13 +1,16 @@
 <template>
-  <lightning-card
-    ><lightning-button
-      variant="destructive-text"
-      label="Reset Slider"
-      onclick={handleClick}
-      class="slds-m-left_x-small"
-    >
-    </lightning-button>
-
-    <c-child-component></c-child-component>
+  <lightning-card>
+    <div class="slds-var-m-around_medium">
+      <h2>Reset Button is Parent component.</h2>
+      <lightning-button
+        variant="destructive-text"
+        label="Reset Slider"
+        onclick={handleClick}
+        class="slds-m-left_x-small"
+      >
+      </lightning-button>
+      <h4>This is child component.</h4>
+      <c-child-component></c-child-component>
+    </div>
   </lightning-card>
 </template>
